@@ -176,7 +176,7 @@ function setint() {
   timeSecTag.textContent = "30";
   timeOutId = setInterval(() => {
     timeSecTag.textContent = +timeSecTag.textContent - 1;
-    if (+timeSecTag.textContent === 0) {
+    if (+timeSecTag.textContent === -1) {
       alert(`Time Up Ans is : ${dataArray[index].correct_word}`);
       location.reload();
     }
